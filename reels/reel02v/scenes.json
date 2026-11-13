@@ -1,0 +1,83 @@
+{
+ "avatar": "photo",
+ "keywords": [
+  "uk",
+  "divorce",
+  "doosri",
+  "shaadi",
+  "supreme",
+  "zinda",
+  "bigamy",
+  "saat",
+  "saal",
+  "2003",
+  "india",
+  "nakaam",
+  "2014",
+  "irretrievable",
+  "breakdown",
+  "british",
+  "citizen",
+  "kanoon",
+  "jurisdiction",
+  "twist",
+  "ground",
+  "foreign",
+  "13",
+  "kaagaz",
+  "kayam",
+  "passport",
+  "parents",
+  "pati",
+  "valid",
+  "nri",
+  "bhejo"
+ ],
+ "scenes": [
+  {
+   "html": "<div class='kick' data-in='0.05'>Supreme Court \u00b7 3 Nov 2026</div><div class='title' data-in='0.15'>UK divorce</div><div class='w' data-s='1' data-d='0' style='margin-top:14px'>+ <em>doosri shaadi</em></div><div class='stamp' data-s='2' data-d='1.6' data-fx='stamp' style='font-size:56px'>PEHLI SHAADI ZINDA</div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05'>Ab pati par</div><div class='title' data-in='0.2'>Bigamy case</div><div class='card' data-s='4' data-d='0' data-fx='up' data-r='-2' style='text-align:center;min-width:560px'><div class='lab'>IPC 494 \u00b7 ab BNS 82</div><div class='big' style='font-size:96px'><i>7 saal</i> tak</div><div class='tx'>ki saza</div></div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05'>Kahani suniye</div><div class='card' data-s='6' data-d='0' data-fx='left' data-r='-1.5'><div class='big'><span class='yr'>2003</span>Shaadi, <i>India</i></div><div class='tx'>Hindu reeti-rivaaz se</div></div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.05' data-r='-1.5' style='opacity:.5'><div class='big'><span class='yr'>2003</span>Shaadi, <i>India</i></div></div><div class='card' data-in='0.2' data-fx='right' data-r='1.5'><div class='big'>\u2708 Pati <i>UK</i> chala gaya</div></div><div class='card' data-s='8' data-d='0.3' data-fx='left' data-r='-1'><div class='lab'>India mein divorce?</div><div class='big'><span class='no'>\u2717</span> Nakaam</div></div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.1' data-fx='right' data-r='1.5'><div class='big'><span class='yr'>2014</span><i>UK court</i></div></div><div class='card' data-s='10' data-d='0' data-fx='up' data-r='-1.5'><div class='lab'>Ground</div><div class='big'>Irretrievable<br>breakdown</div><div class='tx'>= rishta toot chuka hai</div></div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.05' data-fx='left' data-r='-1.5' style='min-width:560px'><div class='big'><span class='ok'>\u2713</span> Divorce mila</div></div><div class='card' data-s='12' data-d='0' data-fx='right' data-r='1.5' style='min-width:560px'><div class='big'><span class='ok'>\u2713</span> Doosri shaadi</div></div><div class='card' data-s='13' data-d='0' data-fx='left' data-r='-1' style='min-width:560px'><div class='big'><span class='ok'>\u2713</span> British citizen</div></div><div class='title sm' data-s='14' data-d='0.2' style='font-size:64px;margin-top:30px'>India ka kanoon<br>kya kar lega?</div>"
+  },
+  {
+   "html": "<div class='title sm' data-in='0.05'>Lekin patni ne\u2026</div><div class='card' data-in='0.8' data-fx='up' data-r='-2' style='text-align:center'><div class='lab'>UK court ka jurisdiction</div><div class='big' style='font-size:76px'><span class='no'>\u2717</span> Kabhi maana hi nahi</div></div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05' style='font-size:40px'>3 November 2026</div><div class='title' data-s='17' data-d='0' data-fx='pop' style='font-size:130px'>Supreme Court<br>ka twist</div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.1' data-fx='up' data-r='-1.5' style='text-align:center'><div class='lab'>Hindu Marriage Act, 1955</div><div class='big'>Irretrievable breakdown?</div></div><div class='stamp' data-in='2.6' data-fx='stamp'>GROUND HI NAHI</div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.1' data-fx='left' data-r='-1.5' style='text-align:center'><div class='lab'>Indian law ke khilaaf</div><div class='big'>Foreign divorce</div><div class='tx'>India mein nahi chalega</div></div><div class='stamp' data-s='20' data-d='0' data-fx='stamp'>\u00a7 13 CPC \u00b7 FAIL</div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.05' data-fx='left' data-r='-2' style='min-width:600px'><div class='lab'>Kaagaz par</div><div class='big'>Divorce</div></div><div class='card' data-s='22' data-d='0' data-fx='right' data-r='1.5' style='min-width:600px'><div class='lab'>Kanoon ki nazar mein</div><div class='big'>Pehli shaadi <i>kayam</i> <span class='ok'>\u2713</span></div></div>"
+  },
+  {
+   "html": "<div data-in='0.05' data-fx='pop' style='font:800 220px/0.6 PF;font-style:italic;color:#E2B566;height:110px'>\u201c</div><div class='title' data-in='0.2' style='font-size:92px'>Passport badalne se<br>kanoon nahi<br>badalta.</div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.05' data-fx='left' data-r='-1.5' style='min-width:620px'><div class='lab'>Parents \u00b7 doosri patni</div><div class='big'>Case khatam <span class='ok'>\u2713</span></div></div><div class='card' data-s='25' data-d='0' data-fx='right' data-r='1.5' style='min-width:620px'><div class='lab'>Pati</div><div class='big'>Case <span class='no'>chalega</span></div></div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05'>Seedhi baat</div><div class='title sm' data-s='27' data-d='0.1'>Indian shaadi</div><div class='w' data-s='27' data-d='0.8'>=</div><div class='title sm' data-s='27' data-d='2.4'>Indian law ka divorce</div>"
+  },
+  {
+   "html": "<div class='w' data-in='0.05' style='font-size:58px'>Kisi <em>NRI dost</em> ki<br>shaadi ya divorce?</div><svg data-s='29' data-d='0' data-fx='pop' width='120' height='150' viewBox='0 0 150 190' style='margin-top:40px'><path d='M20 15 H130 V175 L75 135 L20 175 Z' fill='#E2B566'/></svg><div class='title sm' data-s='29' data-d='0.2' style='margin-top:10px'>Ye reel bhejo</div><div class='kick' data-in='1.5' style='margin-top:36px;font-size:24px;letter-spacing:.08em;text-transform:none;font-weight:500'>For general awareness only. Not legal advice.</div>"
+  }
+ ]
+}

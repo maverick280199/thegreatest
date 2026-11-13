@@ -1,0 +1,247 @@
+{
+ "duration": 85.82,
+ "sentences": [
+  {
+   "text": "UK mein divorce liya.",
+   "scene": 0,
+   "start": 0.0,
+   "end": 1.98
+  },
+  {
+   "text": "Doosri shaadi ki.",
+   "scene": 0,
+   "start": 2.26,
+   "end": 3.18
+  },
+  {
+   "text": "Supreme Court ne kaha \u2014 pehli shaadi abhi bhi zinda hai.",
+   "scene": 0,
+   "start": 3.38,
+   "end": 6.3
+  },
+  {
+   "text": "Ab us pati par bigamy ka case chalega.",
+   "scene": 1,
+   "start": 7.08,
+   "end": 9.14
+  },
+  {
+   "text": "Saat saal tak ki saza wala.",
+   "scene": 1,
+   "start": 9.6,
+   "end": 11.24
+  },
+  {
+   "text": "Kahani suniye.",
+   "scene": 2,
+   "start": 11.827,
+   "end": 13.0
+  },
+  {
+   "text": "2003 \u2014 shaadi India mein, Hindu reeti-rivaaz se.",
+   "scene": 2,
+   "start": 13.0,
+   "end": 17.2
+  },
+  {
+   "text": "Pati UK chala gaya.",
+   "scene": 3,
+   "start": 17.72,
+   "end": 18.88
+  },
+  {
+   "text": "India mein divorce ki koshish nakaam rahi.",
+   "scene": 3,
+   "start": 19.42,
+   "end": 21.58
+  },
+  {
+   "text": "Toh 2014 mein UK court pahunch gaya.",
+   "scene": 4,
+   "start": 21.58,
+   "end": 24.78
+  },
+  {
+   "text": "Ground? Irretrievable breakdown \u2014 yaani rishta toot chuka hai.",
+   "scene": 4,
+   "start": 25.34,
+   "end": 29.96
+  },
+  {
+   "text": "Divorce mila.",
+   "scene": 5,
+   "start": 29.96,
+   "end": 31.1
+  },
+  {
+   "text": "Doosri shaadi ki.",
+   "scene": 5,
+   "start": 31.24,
+   "end": 32.14
+  },
+  {
+   "text": "British citizen bhi ban gaya.",
+   "scene": 5,
+   "start": 32.9,
+   "end": 34.52
+  },
+  {
+   "text": "Socha \u2014 ab India ka kanoon kya kar lega?",
+   "scene": 5,
+   "start": 34.98,
+   "end": 37.76
+  },
+  {
+   "text": "Lekin patni ne us UK court ka jurisdiction kabhi maana hi nahi.",
+   "scene": 6,
+   "start": 37.76,
+   "end": 41.94
+  },
+  {
+   "text": "3 November 2026.",
+   "scene": 7,
+   "start": 42.87,
+   "end": 44.92
+  },
+  {
+   "text": "Supreme Court ka twist.",
+   "scene": 7,
+   "start": 44.92,
+   "end": 46.48
+  },
+  {
+   "text": "Hindu Marriage Act mein irretrievable breakdown koi ground hi nahi hai.",
+   "scene": 8,
+   "start": 46.88,
+   "end": 51.58
+  },
+  {
+   "text": "Toh Indian law ke khilaaf diya gaya foreign divorce, India mein nahi chalega.",
+   "scene": 9,
+   "start": 52.12,
+   "end": 56.66
+  },
+  {
+   "text": "Section 13 CPC.",
+   "scene": 9,
+   "start": 56.9,
+   "end": 58.46
+  },
+  {
+   "text": "Kaagaz par divorce.",
+   "scene": 10,
+   "start": 59.08,
+   "end": 60.28
+  },
+  {
+   "text": "Kanoon ki nazar mein \u2014 pehli shaadi kayam.",
+   "scene": 10,
+   "start": 60.28,
+   "end": 64.48
+  },
+  {
+   "text": "Passport badalne se kanoon nahi badalta.",
+   "scene": 11,
+   "start": 64.48,
+   "end": 67.1
+  },
+  {
+   "text": "Haan, parents aur doosri patni ke khilaaf case khatam hua.",
+   "scene": 12,
+   "start": 67.77,
+   "end": 71.2
+  },
+  {
+   "text": "Par pati ka case chalega.",
+   "scene": 12,
+   "start": 71.2,
+   "end": 73.04
+  },
+  {
+   "text": "Seedhi baat:",
+   "scene": 13,
+   "start": 73.28,
+   "end": 73.96
+  },
+  {
+   "text": "Shaadi Indian law se hui hai, toh divorce bhi Indian law ke hisaab se valid hona chahiye.",
+   "scene": 13,
+   "start": 74.34,
+   "end": 79.2
+  },
+  {
+   "text": "Kisi NRI dost ki shaadi ya divorce ki baat chal rahi hai?",
+   "scene": 14,
+   "start": 79.8,
+   "end": 83.2
+  },
+  {
+   "text": "Ye reel usse bhejo.",
+   "scene": 14,
+   "start": 83.78,
+   "end": 84.94
+  }
+ ],
+ "scenes": [
+  {
+   "i": 0,
+   "start": 0
+  },
+  {
+   "i": 1,
+   "start": 6.96
+  },
+  {
+   "i": 2,
+   "start": 11.707
+  },
+  {
+   "i": 3,
+   "start": 17.6
+  },
+  {
+   "i": 4,
+   "start": 21.46
+  },
+  {
+   "i": 5,
+   "start": 29.84
+  },
+  {
+   "i": 6,
+   "start": 37.64
+  },
+  {
+   "i": 7,
+   "start": 42.75
+  },
+  {
+   "i": 8,
+   "start": 46.76
+  },
+  {
+   "i": 9,
+   "start": 52.0
+  },
+  {
+   "i": 10,
+   "start": 58.96
+  },
+  {
+   "i": 11,
+   "start": 64.36
+  },
+  {
+   "i": 12,
+   "start": 67.65
+  },
+  {
+   "i": 13,
+   "start": 73.16
+  },
+  {
+   "i": 14,
+   "start": 79.68
+  }
+ ]
+}
