@@ -8,9 +8,11 @@ const fs = require('fs'); const path = require('path');
   const fps = 30, dur = timing.duration, n = Math.ceil(dur * fps);
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
-  await page.goto('file://' + path.join(__dirname, 'stage.html') );
+  await page.goto('file://' + path.join(__dirname, process.argv[3] || 'stage.html') );
   const rd=f=>JSON.parse(fs.readFileSync(path.join(dir,f)));
-  await page.evaluate(([a,b,c])=>window.init(a,b,c),[rd('scenes.json'),rd('timing.json'),rd('amp.json')]);
+  await page.evaluate(([a,b,c,d])=>window.init(a,b,c,d),[rd('scenes.json'),rd('timing.json'),rd('amp.json'),dir]);
+  await page.evaluate(()=>document.fonts.ready);
+  await page.waitForTimeout(300);
   await page.waitForFunction('window.ready === true');
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-',
     '-i', path.join(dir, 'voice.mp3'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-crf', '18',

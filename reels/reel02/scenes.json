@@ -1,0 +1,53 @@
+{
+ "keywords": [
+  "videsh",
+  "divorce",
+  "doosri",
+  "shaadi",
+  "case",
+  "chalega",
+  "2003",
+  "india",
+  "2014",
+  "uk",
+  "jurisdiction",
+  "ground",
+  "fail",
+  "zinda",
+  "citizenship",
+  "bigamy",
+  "indian",
+  "valid",
+  "save",
+  "nri"
+ ],
+ "scenes": [
+  {
+   "html": "<div class='kick' data-in='0.05'>Supreme Court \u00b7 Naya faisla</div><div class='title' data-in='0.2'>Videsh mein<br>divorce?</div><div class='w' data-in='0.6' style='margin-top:26px'>India mein <em>doosri shaadi?</em></div><div class='stamp' data-s='1' data-d='0.9' data-fx='stamp'>CASE CHALEGA</div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.1' data-fx='up' data-r='-2'><div class='lab'>Supreme Court of India</div><div class='big'>3 November <i>2026</i></div><div class='tx'>Justice Prashant Kumar Mishra<br>&amp; Justice Shree Chandrashekhar</div></div><div class='pill o' data-in='0.7'>Criminal Appeal \u00b7 Bigamy</div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05'>Kahani</div><div class='card' data-in='0.25' data-fx='left' data-r='-1.5'><div class='big'><span class='yr'>2003</span>Shaadi, <i>India</i></div><div class='tx'>Hindu reeti-rivaaz \u00b7 Hindu Marriage Act</div></div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05'>Kahani</div><div class='card' data-in='0.1' data-r='-1.5' style='opacity:.55'><div class='big'><span class='yr'>2003</span>Shaadi, <i>India</i></div></div><div class='card' data-in='0.4' data-fx='right' data-r='1.5'><div class='big'><span class='yr'>2014</span>Divorce, <i>UK court</i></div><div class='tx'>Ground: <b>irretrievable breakdown</b></div></div><div class='card' data-s='4' data-d='6.0' data-fx='left' data-r='-1'><div class='big'><span class='yr'>&nbsp;\u2192</span>Doosri shaadi</div></div>"
+  },
+  {
+   "html": "<div class='title sm' data-in='0.1'>Patni ne kaha:</div><div class='card' data-in='0.5' data-fx='up' data-r='-2' style='text-align:center'><div class='lab'>UK court ka jurisdiction</div><div class='big' style='font-size:84px'><span class='no'>\u2717</span> Maana hi nahi</div></div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05'>Supreme Court ne kaha</div><div class='card' data-in='0.25' data-fx='left' data-r='-1.5'><div class='lab'>Hindu Marriage Act</div><div class='big'>Irretrievable breakdown<br><span class='no'>\u2717</span> <i>ground hi nahi</i></div></div><div class='card' data-s='7' data-d='0.3' data-fx='right' data-r='1.5'><div class='lab'>Section 13 CPC</div><div class='big'>Foreign decree <span class='no'>FAIL</span></div></div><div class='pill' data-s='7' data-d='3.2' data-fx='pop'>Pehli shaadi: ZINDA \u2713</div>"
+  },
+  {
+   "html": "<div class='card' data-in='0.15' data-fx='up' data-r='-2' style='text-align:center'><div class='lab'>British citizenship</div><div class='big'>Bachaav? <span class='no'>Nahi</span></div></div><div class='stamp' data-s='9' data-d='0.4' data-fx='stamp' style='font-size:58px'>BIGAMY \u00b7 IPC 494</div><div class='pill o' data-s='9' data-d='1.2' data-fx='pop' style='font-size:30px'>ab BNS \u00a7 82</div>"
+  },
+  {
+   "html": "<div class='kick' data-in='0.05'>Lesson</div><div class='title sm' data-s='11' data-d='0.1'>Indian shaadi</div><div class='w' data-s='11' data-d='0.6'>=</div><div class='title sm' data-s='11' data-d='1.4'>Indian law ka divorce</div>"
+  },
+  {
+   "html": "<svg data-in='0.05' data-fx='pop' width='150' height='190' viewBox='0 0 150 190'><path d='M20 15 H130 V175 L75 135 L20 175 Z' fill='#E2B566'/></svg><div class='title sm' data-in='0.3' style='margin-top:20px'>Save karo</div><div class='w' data-in='0.6' style='font-size:52px;margin-top:10px'>NRI shaadi wale <em>dost</em> ko bhejo</div><div class='kick' data-in='1.2' style='margin-top:40px;font-size:24px;letter-spacing:.08em;text-transform:none;font-weight:500'>For general awareness only. Not legal advice.</div>"
+  }
+ ]
+}

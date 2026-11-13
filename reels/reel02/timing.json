@@ -1,0 +1,121 @@
+{
+ "duration": 54.36,
+ "sentences": [
+  {
+   "text": "Videsh mein divorce le liya, aur doosri shaadi bhi kar li?",
+   "scene": 0,
+   "start": 0.0,
+   "end": 3.499
+  },
+  {
+   "text": "Supreme Court ne kaha, case chalega.",
+   "scene": 0,
+   "start": 4.007,
+   "end": 6.391
+  },
+  {
+   "text": "Teen November 2026 ka faisla hai.",
+   "scene": 1,
+   "start": 7.078,
+   "end": 9.671
+  },
+  {
+   "text": "Shaadi 2003 mein India mein, Hindu reeti-rivaaz se hui.",
+   "scene": 2,
+   "start": 10.211,
+   "end": 13.986
+  },
+  {
+   "text": "Pati ne 2014 mein UK court se divorce le liya, irretrievable breakdown ke ground par, aur doosri shaadi kar li.",
+   "scene": 3,
+   "start": 14.622,
+   "end": 21.84
+  },
+  {
+   "text": "Patni ne us UK court ka jurisdiction maana hi nahi.",
+   "scene": 4,
+   "start": 22.58,
+   "end": 25.561
+  },
+  {
+   "text": "Supreme Court ne kaha, Hindu Marriage Act mein ye ground hai hi nahi.",
+   "scene": 5,
+   "start": 26.087,
+   "end": 30.1
+  },
+  {
+   "text": "Isliye ye foreign decree Section 13 CPC par fail, aur pehli shaadi ab bhi zinda hai.",
+   "scene": 5,
+   "start": 30.764,
+   "end": 36.304
+  },
+  {
+   "text": "British citizenship lene se bhi bachaav nahi.",
+   "scene": 6,
+   "start": 37.015,
+   "end": 39.315
+  },
+  {
+   "text": "Pati par bigamy ka case chalega.",
+   "scene": 6,
+   "start": 39.816,
+   "end": 41.548
+  },
+  {
+   "text": "Lesson simple hai.",
+   "scene": 7,
+   "start": 42.201,
+   "end": 43.168
+  },
+  {
+   "text": "Shaadi Indian law se hui hai, toh divorce bhi Indian law ke hisaab se valid hona chahiye.",
+   "scene": 7,
+   "start": 43.576,
+   "end": 48.642
+  },
+  {
+   "text": "Ye reel save karo, aur NRI shaadi wale har dost ko bhejo.",
+   "scene": 8,
+   "start": 49.377,
+   "end": 53.159
+  }
+ ],
+ "scenes": [
+  {
+   "i": 0,
+   "start": 0
+  },
+  {
+   "i": 1,
+   "start": 6.928
+  },
+  {
+   "i": 2,
+   "start": 10.061
+  },
+  {
+   "i": 3,
+   "start": 14.472
+  },
+  {
+   "i": 4,
+   "start": 22.43
+  },
+  {
+   "i": 5,
+   "start": 25.937
+  },
+  {
+   "i": 6,
+   "start": 36.865
+  },
+  {
+   "i": 7,
+   "start": 42.051
+  },
+  {
+   "i": 8,
+   "start": 49.227000000000004
+  }
+ ]
+}

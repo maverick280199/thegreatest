@@ -1,0 +1,83 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:PF;src:url(fonts/playfair-display-latin-800-italic.woff2);font-style:italic;font-weight:800}
+@font-face{font-family:PF;src:url(fonts/playfair-display-latin-700-italic.woff2);font-style:italic;font-weight:700}
+@font-face{font-family:PF;src:url(fonts/playfair-display-latin-700-normal.woff2);font-style:normal;font-weight:700}
+@font-face{font-family:PP;src:url(fonts/poppins-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:PP;src:url(fonts/poppins-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:PP;src:url(fonts/poppins-latin-800-normal.woff2);font-weight:800}
+:root{--gold:#E2B566;--gold2:#C99A4B;--paper:#F1E7D3;--ink:#2A1C12;--red:#B4321F;--cream:#F7EEDC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#24170e;font-family:PP,sans-serif;color:var(--cream)}
+#bg{position:absolute;inset:0}
+#hdr{position:absolute;top:96px;width:100%;text-align:center;font:700 26px PP;letter-spacing:.32em;color:var(--gold2);opacity:.9}
+#stage{position:absolute;top:190px;left:70px;right:70px;height:1000px}
+.sc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0}
+.kick{font:700 30px PP;letter-spacing:.22em;color:var(--gold2);text-transform:uppercase}
+.title{font:800 112px/1.02 PF;font-style:italic;color:var(--gold);margin-top:18px;text-shadow:0 4px 0 rgba(0,0,0,.25)}
+.title.sm{font-size:88px}
+.w{font:800 64px/1.15 PP;color:var(--cream)}
+.w em{font:800 72px PF;font-style:italic;color:var(--gold)}
+.card{background:var(--paper);color:var(--ink);border-radius:18px;padding:34px 44px;box-shadow:0 18px 40px rgba(0,0,0,.45);text-align:left;margin-top:34px;min-width:640px;position:relative}
+.card:before{content:'';position:absolute;inset:10px;border:2px dashed rgba(42,28,18,.18);border-radius:12px;pointer-events:none}
+.card .lab{font:700 26px PP;letter-spacing:.18em;color:#8a6a45;text-transform:uppercase}
+.card .big{font:700 60px/1.15 PF;color:var(--ink);margin-top:8px}
+.card .big i{font-style:italic;color:#9a6a1f}
+.card .tx{font:500 38px/1.35 PP;color:#4a3626;margin-top:10px}
+.yr{font:800 54px PF;font-style:italic;color:var(--gold);margin-right:24px}
+.stamp{display:inline-block;margin-top:40px;padding:18px 40px;border:7px solid var(--red);color:var(--red);font:800 64px PP;letter-spacing:.06em;border-radius:14px;transform:rotate(-6deg);background:rgba(241,231,211,.06)}
+.ok{color:#5aa469}.no{color:var(--red)}
+.pill{display:inline-block;margin:28px 10px 0;padding:14px 34px;border-radius:50px;font:700 36px PP;background:var(--gold);color:var(--ink)}
+.pill.o{background:transparent;border:3px solid var(--gold);color:var(--gold)}
+#sub{position:absolute;top:1200px;left:70px;right:70px;text-align:center;font:800 52px/1.28 PP;color:#fff;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+#sub span{opacity:.32}#sub span.on{opacity:1}#sub span.k{color:var(--gold)}
+#char{position:absolute;left:20px;bottom:-60px;width:480px;height:620px}
+#head{position:absolute;width:310px;left:85px;top:132px;transform-origin:50% 90%}
+#bar{position:absolute;top:0;left:0;height:9px;background:var(--gold)}
+</style></head><body>
+<canvas id="bg" width="1080" height="1920"></canvas><div id="bar"></div>
+<div id="hdr">PUNDIR &amp; ASSOCIATES</div>
+<div id="stage"></div><div id="sub"></div>
+<div id="char">
+ <svg id="body" width="480" height="620" viewBox="0 0 480 620" style="position:absolute;left:0;top:0">
+  <g id="arm"><path d="M330 395 C380 360 410 300 425 250" stroke="#151515" stroke-width="58" stroke-linecap="round" fill="none"/>
+   <circle cx="428" cy="236" r="28" fill="#D9A07C"/><path d="M432 212 L440 160" stroke="#D9A07C" stroke-width="20" stroke-linecap="round"/></g>
+  <path d="M70 620 C72 470 130 380 240 372 C350 380 408 470 410 620 Z" fill="#151515"/>
+  <path d="M95 620 C100 500 150 420 200 392 L215 620 Z M385 620 C380 500 330 420 280 392 L265 620 Z" fill="#0b0b0b"/>
+  <path d="M200 380 L240 470 L280 380 Z" fill="#fff"/>
+  <path d="M200 380 L240 470 L222 520 L180 400 Z M280 380 L240 470 L258 520 L300 400 Z" fill="#202020"/>
+  <rect x="223" y="440" width="15" height="70" rx="3" fill="#fff"/><rect x="242" y="440" width="15" height="70" rx="3" fill="#fff"/>
+  <rect x="214" y="350" width="52" height="40" rx="14" fill="#C68F6B"/>
+ </svg>
+ <img id="head">
+</div>
+<script>
+const ease=x=>1-Math.pow(1-Math.min(1,Math.max(0,x)),3);
+let S,T,A,els=[];
+function grain(){const c=document.getElementById('bg'),x=c.getContext('2d');
+ const g=x.createRadialGradient(540,700,100,540,900,1300);g.addColorStop(0,'#4a3020');g.addColorStop(.55,'#2c1c12');g.addColorStop(1,'#140c07');x.fillStyle=g;x.fillRect(0,0,1080,1920);
+ const im=x.getImageData(0,0,1080,1920),d=im.data;let s=7;const r=()=>(s=(s*16807)%2147483647)/2147483647;
+ for(let i=0;i<d.length;i+=4){const n=(r()-.5)*22;d[i]+=n;d[i+1]+=n;d[i+2]+=n;}x.putImageData(im,0,0);
+ x.globalAlpha=.06;x.strokeStyle='#E2B566';for(let i=0;i<14;i++){x.beginPath();x.moveTo(0,140*i+40);x.bezierCurveTo(360,140*i+90,720,140*i-10,1080,140*i+50);x.stroke();}}
+window.init=(s,t,a,dir)=>{S=s;T=t;A=a;grain();document.getElementById('head').src='file://'+dir+'/head.png';
+ const st=document.getElementById('stage');S.scenes.forEach(sc=>{const d=document.createElement('div');d.className='sc';d.innerHTML=sc.html;st.appendChild(d);els.push(d);});
+ window.ready=true;};
+function sceneAt(t){let i=0;for(let k=0;k<T.scenes.length;k++)if(t>=T.scenes[k].start)i=k;return i;}
+window.renderAt=function(t){
+ const i=sceneAt(t),sc=T.scenes[i],lt=t-sc.start;
+ els.forEach((e,k)=>{if(k!==i){e.style.opacity=0;return;} e.style.opacity=ease(lt/0.3);
+  e.querySelectorAll('[data-in],[data-s]').forEach(c=>{const d=c.dataset.s!==undefined?T.sentences[+c.dataset.s].start-sc.start+(+c.dataset.d||0):+c.dataset.in;
+   const p=ease((lt-d)/0.45),fx=c.dataset.fx||'up',rot=+c.dataset.r||0;c.style.opacity=p;
+   if(fx==='up')c.style.transform=`translateY(${(1-p)*60}px) rotate(${rot}deg)`;
+   else if(fx==='left')c.style.transform=`translateX(${(1-p)*-260}px) rotate(${rot}deg)`;
+   else if(fx==='right')c.style.transform=`translateX(${(1-p)*260}px) rotate(${rot}deg)`;
+   else if(fx==='stamp'){const q=Math.min(1,Math.max(0,(lt-d)/0.25));c.style.opacity=q;c.style.transform=`scale(${2.2-1.2*q}) rotate(${-6+rot}deg)`;}
+   else if(fx==='pop'){const q=Math.min(1,Math.max(0,(lt-d)/0.3));c.style.opacity=q;c.style.transform=`scale(${q<1?0.5+0.62*Math.sin(q*Math.PI/2):1})`;}});});
+ const sen=T.sentences.find(x=>t>=x.start&&t<x.end+0.25),sub=document.getElementById('sub');
+ if(sen){const ws=sen.text.split(' '),p=(t-sen.start)/Math.max(.1,sen.end-sen.start);
+  sub.innerHTML=ws.map((w,k)=>{const key=(S.keywords||[]).includes(w.toLowerCase().replace(/[^a-z0-9]/g,''));return `<span class="${k/ws.length<=p?'on':''}${key?' k':''}">${w}</span>`}).join(' ');}else sub.innerHTML='';
+ const a=A.rms[Math.min(A.rms.length-1,Math.floor(t*A.fps))]||0;
+ document.getElementById('head').style.transform=`translateY(${-a*10+Math.sin(t*2.2)*3}px) rotate(${Math.sin(t*1.4)*2.2+a*1.5}deg) scale(${1+a*0.025})`;
+ document.getElementById('arm').setAttribute('transform',`rotate(${Math.sin(t*1.8)*4} 330 395)`);
+ document.getElementById('bar').style.width=(t/T.duration*1080)+'px';};
+</script></body></html>
