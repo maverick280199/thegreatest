@@ -1,0 +1,129 @@
+{
+ "duration": 44.51,
+ "sentences": [
+  {
+   "text": "Police aapko arrest karke chup nahi reh sakti.",
+   "scene": 0,
+   "start": 0.0,
+   "end": 2.39
+  },
+  {
+   "text": "Article 22 aur naye BNSS ke under, chaar cheezein zaroori hain.",
+   "scene": 1,
+   "start": 2.82,
+   "end": 7.757
+  },
+  {
+   "text": "Ek.",
+   "scene": 2,
+   "start": 8.421,
+   "end": 8.711
+  },
+  {
+   "text": "Unhe batana hoga ki arrest kyun ho raha hai.",
+   "scene": 2,
+   "start": 9.183,
+   "end": 11.701
+  },
+  {
+   "text": "Section 47.",
+   "scene": 2,
+   "start": 12.143,
+   "end": 13.342
+  },
+  {
+   "text": "Do.",
+   "scene": 3,
+   "start": 13.99,
+   "end": 14.364
+  },
+  {
+   "text": "Offence bailable hai, toh batana hoga ki aapko bail mil sakti hai.",
+   "scene": 3,
+   "start": 14.877,
+   "end": 18.967
+  },
+  {
+   "text": "Teen.",
+   "scene": 4,
+   "start": 19.719,
+   "end": 20.113
+  },
+  {
+   "text": "Aapke kisi rishtedaar ya dost ko batana hoga ki aap kahan ho.",
+   "scene": 4,
+   "start": 20.608,
+   "end": 24.452
+  },
+  {
+   "text": "Section 48.",
+   "scene": 4,
+   "start": 24.94,
+   "end": 26.063
+  },
+  {
+   "text": "Chaar.",
+   "scene": 5,
+   "start": 26.752,
+   "end": 27.155
+  },
+  {
+   "text": "Chaubees ghante ke andar magistrate ke saamne pesh karna hoga.",
+   "scene": 5,
+   "start": 27.826,
+   "end": 31.13
+  },
+  {
+   "text": "Section 58.",
+   "scene": 5,
+   "start": 31.712,
+   "end": 32.689
+  },
+  {
+   "text": "Aur Article 22 aapko apni pasand ka vakeel karne ka haq deta hai.",
+   "scene": 6,
+   "start": 33.197,
+   "end": 37.642
+  },
+  {
+   "text": "Ise save karo, aur us insaan ko bhejo jise kabhi iski zaroorat pad sakti hai.",
+   "scene": 7,
+   "start": 38.307,
+   "end": 43.311
+  }
+ ],
+ "scenes": [
+  {
+   "i": 0,
+   "start": 0
+  },
+  {
+   "i": 1,
+   "start": 2.67
+  },
+  {
+   "i": 2,
+   "start": 8.270999999999999
+  },
+  {
+   "i": 3,
+   "start": 13.84
+  },
+  {
+   "i": 4,
+   "start": 19.569000000000003
+  },
+  {
+   "i": 5,
+   "start": 26.602
+  },
+  {
+   "i": 6,
+   "start": 33.047000000000004
+  },
+  {
+   "i": 7,
+   "start": 38.157000000000004
+  }
+ ]
+}

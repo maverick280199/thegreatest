@@ -1,0 +1,96 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+:root{--bg:#F6F1E7;--ink:#1B2A41;--gold:#B08D57;--muted:#7A7F87;--line:#D9D1C1}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:'DejaVu Sans',Arial,sans-serif;color:var(--ink)}
+#hdr{position:absolute;top:110px;left:0;right:0;text-align:center;font-size:30px;letter-spacing:.28em;color:var(--gold);font-weight:700}
+#hdr small{display:block;margin-top:14px;letter-spacing:.12em;font-size:26px;color:var(--muted);font-weight:400}
+#stage{position:absolute;top:250px;left:80px;right:80px;height:900px}
+.sc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0}
+.big{font-size:150px;font-weight:800;line-height:1;letter-spacing:-.02em}
+.num{font-size:230px;font-weight:800;color:var(--gold);line-height:1}
+.h{font-size:72px;font-weight:800;line-height:1.15;margin-top:30px}
+.h em{font-style:normal;color:var(--gold)}
+.s{font-size:44px;color:var(--muted);margin-top:24px;line-height:1.3}
+.pill{display:inline-block;margin-top:40px;padding:18px 40px;border:3px solid var(--ink);border-radius:60px;font-size:40px;font-weight:700;letter-spacing:.06em}
+.pill.g{background:var(--ink);color:var(--bg)}
+.row{display:flex;gap:28px;justify-content:center}
+.ul{height:8px;background:var(--gold);margin:26px auto 0;border-radius:4px;width:0}
+.ico{margin-bottom:30px}
+.chk{font-size:52px;font-weight:700;text-align:left;margin:16px 0;display:flex;align-items:center;gap:26px}
+.chk b{display:inline-flex;width:64px;height:64px;border-radius:50%;background:var(--gold);color:#fff;align-items:center;justify-content:center;font-size:40px}
+#sub{position:absolute;top:1190px;left:90px;right:90px;text-align:center;font-size:50px;font-weight:700;line-height:1.3;color:var(--ink)}
+#sub .w{opacity:.25}
+#sub .w.on{opacity:1}
+#sub .w.k{color:var(--gold)}
+#av{position:absolute;bottom:0;left:50%;transform:translateX(-50%)}
+#bar{position:absolute;top:0;left:0;height:10px;background:var(--gold)}
+</style></head><body>
+<div id="bar"></div>
+<div id="hdr">PUNDIR &amp; ASSOCIATES<small>Legal awareness · @pundirandassociates</small></div>
+<div id="stage"></div>
+<div id="sub"></div>
+<svg id="av" width="560" height="560" viewBox="0 0 560 560">
+  <g id="avg">
+  <!-- coat -->
+  <path d="M60 560 C70 430 160 380 280 380 C400 380 490 430 500 560 Z" fill="#1B2A41"/>
+  <!-- shirt V -->
+  <path d="M235 382 L280 470 L325 382 Z" fill="#fff"/>
+  <!-- lapels -->
+  <path d="M235 382 L280 470 L250 560 L190 400 Z" fill="#111C2E"/><path d="M325 382 L280 470 L310 560 L370 400 Z" fill="#111C2E"/>
+  <!-- advocate bands -->
+  <rect x="262" y="440" width="16" height="62" rx="3" fill="#fff" stroke="#D9D1C1" stroke-width="2"/>
+  <rect x="282" y="440" width="16" height="62" rx="3" fill="#fff" stroke="#D9D1C1" stroke-width="2"/>
+  <!-- neck -->
+  <rect x="250" y="320" width="60" height="70" rx="20" fill="#C99A78"/>
+  <!-- head -->
+  <ellipse cx="280" cy="235" rx="105" ry="120" fill="#D7A985"/>
+  <!-- hair -->
+  <path d="M175 230 C170 140 220 105 285 108 C350 110 392 150 386 228 C372 190 352 168 300 165 C250 163 205 175 175 230 Z" fill="#1E1A18"/>
+  <!-- ears -->
+  <ellipse cx="176" cy="245" rx="14" ry="24" fill="#C99A78"/><ellipse cx="384" cy="245" rx="14" ry="24" fill="#C99A78"/>
+  <!-- glasses -->
+  <g fill="none" stroke="#1B2A41" stroke-width="5"><circle cx="238" cy="240" r="30"/><circle cx="322" cy="240" r="30"/><path d="M268 240 H292"/></g>
+  <!-- eyes -->
+  <g id="eyes" fill="#1E1A18"><ellipse cx="238" cy="242" rx="7" ry="8"/><ellipse cx="322" cy="242" rx="7" ry="8"/></g>
+  <!-- brows -->
+  <g stroke="#1E1A18" stroke-width="6" stroke-linecap="round"><path id="b1" d="M212 198 Q238 188 262 198"/><path id="b2" d="M298 198 Q322 188 348 198"/></g>
+  <!-- nose -->
+  <path d="M280 255 Q272 285 284 290" fill="none" stroke="#B5845F" stroke-width="4" stroke-linecap="round"/>
+  <!-- mouth -->
+  <ellipse id="mouth" cx="280" cy="318" rx="26" ry="4" fill="#7A2E2E"/>
+  </g>
+</svg>
+<script>
+const q=new URLSearchParams(location.search), D=q.get('d');
+const ease=x=>1-Math.pow(1-Math.min(1,Math.max(0,x)),3);
+let S,T,A,els=[],words=[];
+window.init=(s,t,a)=>{
+  S=s;T=t;A=a;const st=document.getElementById('stage');
+  S.scenes.forEach((sc,i)=>{const d=document.createElement('div');d.className='sc';d.innerHTML=sc.html;st.appendChild(d);els.push(d);});
+  window.ready=true;};
+function sceneAt(t){let i=0;for(let k=0;k<T.scenes.length;k++)if(t>=T.scenes[k].start)i=k;return i;}
+window.renderAt=function(t){
+  const i=sceneAt(t), sc=T.scenes[i], lt=t-sc.start;
+  els.forEach((e,k)=>{ if(k!==i){e.style.opacity=0;return;}
+    e.style.opacity=ease(lt/0.35);
+    e.querySelectorAll('[data-in]').forEach(c=>{const d=+c.dataset.in, p=ease((lt-d)/0.5);
+      c.style.opacity=p; c.style.transform=`translateY(${(1-p)*40}px)`;});
+    e.querySelectorAll('.ul').forEach(u=>{u.style.width=(ease((lt-0.6)/0.6)*(+u.dataset.w||420))+'px';});
+    e.querySelectorAll('[data-count]').forEach(c=>{c.textContent=Math.round(ease((lt-0.2)/1.2)*(+c.dataset.count));});
+    e.querySelectorAll('[data-pop]').forEach(c=>{const d=+c.dataset.pop,p=Math.min(1,Math.max(0,(lt-d)/0.35));const s=p<1?0.6+0.55*Math.sin(p*Math.PI/2)-0.15*p:1;c.style.opacity=p;c.style.transform=`scale(${s})`;});
+  });
+  // subtitles: current sentence, words light up proportionally
+  const sen=T.sentences.find(x=>t>=x.start&&t<x.end+0.25)||null, sub=document.getElementById('sub');
+  if(sen){const ws=sen.text.split(' ');const p=(t-sen.start)/Math.max(.1,sen.end-sen.start);
+    sub.innerHTML=ws.map((w,k)=>{const key=(S.keywords||[]).some(x=>w.toLowerCase().replace(/[^a-z0-9]/g,'')===x);return `<span class="w${k/ws.length<=p?' on':''}${key?' k':''}">${w}</span>`}).join(' ');}
+  else sub.innerHTML='';
+  // avatar: mouth from amplitude, blink, gentle bob
+  const a=A.rms[Math.min(A.rms.length-1,Math.floor(t*A.fps))]||0;
+  document.getElementById('mouth').setAttribute('ry',4+Math.min(1,a)*20);
+  document.getElementById('mouth').setAttribute('rx',26-Math.min(1,a)*6);
+  const bl=(t%3.7)<0.12; document.getElementById('eyes').style.transform=bl?'translateY(242px) scaleY(.1) translateY(-242px)':'';
+  document.getElementById('avg').setAttribute('transform',`translate(0 ${Math.sin(t*2.1)*4}) rotate(${Math.sin(t*1.3)*1.2} 280 400)`);
+  document.getElementById('bar').style.width=(t/T.duration*1080)+'px';
+};
+</script></body></html>
