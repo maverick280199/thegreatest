@@ -8,17 +8,21 @@ Status: TODO -> MADE -> POSTED (the scheduled run updates this column).
 |---|------|------|-------|----------------|---------|--------|
 | 1 | Mon 16 Nov 2026 | RIGHTS | Police arrive to arrest you: the 4 things they must tell/do | "Police can't arrest you and stay silent." (#2 Negative Command) | Art. 22(1)-(2); BNSS s.47 (grounds + right to bail), s.48 (inform relative), s.58 (magistrate in 24h) | POSTED 13 Nov https://www.instagram.com/reel/DfsNmnKiScG/ |
 | 1b | Mon 16 Nov 2026 7:30pm | JUDGMENT | UK divorce + doosri shaadi = bigamy (SC, 3 Nov 2026) — user's own voice, original uniform | "UK mein divorce liya. Doosri shaadi ki." | s.13 CPC; HMA; IPC 494 / BNS 82 | SCHEDULED Mon 16 Nov 7:30pm (reels/reel02v, auto-publish approved) |
-| 2 | Wed 18 Nov 2026 | MYTH | "Police said go to the other police station" — Zero FIR | "Wrong police station? They still have to write your FIR." | BNSS s.173(1) Zero FIR + e-FIR; Lalita Kumari v. Govt of UP (2013) | TODO |
-| 3 | Fri 20 Nov 2026 | WHAT-IF | Your cheque bounced: the 30-15-30 day clock | "30 days. 15 days. 30 days. Miss one and the case is gone." | NI Act s.138 provisos (b),(c); s.142(1)(b) | TODO |
-| 4 | Mon 23 Nov 2026 | MYTH | Nominee is not the owner | "Your nominee doesn't inherit your money." | Shakti Yezdani v. Jayanand Salgaonkar (SC, 2023) | TODO |
-| 5 | Wed 25 Nov 2026 | RIGHTS | A woman can't be arrested at night (and the exception) | "After sunset, police need a magistrate's permission." | BNSS s.43(5) (old CrPC 46(4)) | TODO |
-| 6 | Fri 27 Nov 2026 | WHAT-IF | Bank sent a SARFAESI notice: your 60 days | "The bank's notice gives you 60 days. Use them." | SARFAESI s.13(2), s.13(3A), s.17 (DRT, 45 days) | TODO |
-| 7 | Mon 30 Nov 2026 | JUDGMENT | Daughters are coparceners by birth | "Your father was alive in 2005? Doesn't matter." | Vineeta Sharma v. Rakesh Sharma (SC, 2020); HSA s.6 (2005 amdt) | TODO |
-| 8 | Wed 2 Dec 2026 | WHAT-IF | Online fraud: the first hour | "Lost money to a UPI scam? Call 1930 before anything else." | National Cyber Crime helpline 1930; cybercrime.gov.in; BNS s.318 (cheating) | TODO |
-| 9 | Fri 4 Dec 2026 | RIGHTS | Faulty product / bad service: consumer complaint online | "You don't need a lawyer to file a consumer case." | Consumer Protection Act 2019 s.35, s.69 (2 years); e-Daakhil | TODO |
-| 10 | Mon 7 Dec 2026 | NEWLAW | IPC is gone: the numbers you knew changed | "Section 420 doesn't exist any more." | BNS s.318 (cheating), s.103 (murder), s.64 (rape); in force 1 Jul 2024 | TODO |
-| 11 | Wed 9 Dec 2026 | RIGHTS | Notice instead of arrest | "Got a police notice? That's not an arrest." | BNSS s.35(3)-(6) (old 41A); Arnesh Kumar v. State of Bihar (2014) | TODO |
-| 12 | Fri 11 Dec 2026 | WHAT-IF | Government ignoring you: RTI in 3 steps | "Rs 10 and 30 days. That's what an answer costs." | RTI Act s.6, s.7(1) (30 days), s.19 (first appeal) | TODO |
+| 2 | Wed 18 Nov 2026 | MYTH (property) | "Registry ho gayi toh zameen aapki?" — when a registered sale deed still doesn't give title (seller had no title) | "Registry ho gayi, phir bhi zameen aapki nahi." | VERIFY at production: TPA s.54; the 2025 SC ruling being cited on registration vs title | TODO |
+| 3 | Fri 20 Nov 2026 | REACTION (family) | Pick the week's most viral husband-wife / property clip -> what the law actually says | first line = the clip's conflict | choose that week | TODO |
+| 4 | Mon 23 Nov 2026 | JUDGMENT | Nominee is not the owner | "Nominee ko paisa milega, par maalik wo nahi." | Shakti Yezdani v. Jayanand Salgaonkar (SC, 2023) | TODO |
+| 5 | Wed 25 Nov 2026 | MYTH-BUST (family) | The viral "1 saal maayke mein rahi toh talaak" claim — FAKE; real desertion ground is 2 years | "Ye viral 'naya kanoon' FAKE hai." | HMA s.13(1)(ib) (desertion, 2 years) | TODO |
+| 6 | Fri 27 Nov 2026 | PROPERTY | Daughters are coparceners by birth, even if father died before 2005 | "Beti ki shaadi ho gayi, toh haq khatam? Bilkul nahi." | Vineeta Sharma v. Rakesh Sharma (SC, 2020); HSA s.6 | TODO |
+| 7 | Mon 30 Nov 2026 | LIST (property) | 5 documents to check before buying land/flat | "Zameen khareedne se pehle ye 5 kaagaz dekh lo." | title chain, encumbrance cert., mutation, approved map, tax receipts (general, no case cite) | TODO |
+| 8 | Wed 2 Dec 2026 | FAMILY | Maintenance: what the court looks at (income, needs, both spouses' earnings) | "Kamaane wali patni ko maintenance milega?" | Rajnesh v. Neha (SC, 2020); BNSS s.144 (old CrPC 125) — VERIFY | TODO |
+| 9 | Fri 4 Dec 2026 | REACTION | Trend slot — viral family/property clip of the week | — | choose that week | TODO |
+| 10 | Mon 7 Dec 2026 | JUDGMENT | Latest SC/HC family or property ruling of the week | verdict-first hook | choose that week, verify 3+ sources | TODO |
+| 11 | Wed 9 Dec 2026 | PROPERTY | Will vs gift deed — which one, and why (revocable vs not, registration) | "Will likhoge ya gift deed? Galti mehngi padegi." | Indian Succession Act; TPA s.122-126; Registration Act s.17 — VERIFY | TODO |
+| 12 | Fri 11 Dec 2026 | FAMILY | Court marriage: notice, 30 days, objections | "Court marriage ek din mein? Nahi." | Special Marriage Act ss.5-7 (30-day notice) | TODO |
+| 13 | Mon 14 Dec 2026 | PROPERTY | Can parents evict an adult son from their house? | "Maa-baap ghar se nikaal sakte hain?" | Maintenance and Welfare of Parents and Senior Citizens Act, 2007 — VERIFY latest SC view | TODO |
+
+Older police/rights topics (Zero FIR, arrest at night, s.35 notice, cheque bounce, UPI fraud, consumer, RTI)
+are parked: that lane is saturated (see strategy.md). Use them only as trend-reaction slots.
 
 ## Engagement (20 min/day, comments only — never pitch, never DM for work)
 Comment substantively on: legal-literacy and law-explainer accounts, law students' pages,
