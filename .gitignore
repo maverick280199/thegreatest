@@ -1,3 +1,5 @@
 reels/**/*.mp4
 reels/**/*.mp3
 reels/**/head.png
+reels/**/full.png
+reels/**/compare_*.png

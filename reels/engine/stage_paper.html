@@ -29,10 +29,11 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#24170e;font-fam
 .ok{color:#5aa469}.no{color:var(--red)}
 .pill{display:inline-block;margin:28px 10px 0;padding:14px 34px;border-radius:50px;font:700 36px PP;background:var(--gold);color:var(--ink)}
 .pill.o{background:transparent;border:3px solid var(--gold);color:var(--gold)}
-#sub{position:absolute;top:1200px;left:70px;right:70px;text-align:center;font:800 52px/1.28 PP;color:#fff;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+#sub{position:absolute;top:1140px;left:70px;right:70px;text-align:center;font:800 52px/1.28 PP;color:#fff;text-shadow:0 3px 10px rgba(0,0,0,.6)}
 #sub span{opacity:.32}#sub span.on{opacity:1}#sub span.k{color:var(--gold)}
 #char{position:absolute;left:20px;bottom:-60px;width:480px;height:620px}
-#head{position:absolute;width:310px;left:85px;top:132px;transform-origin:50% 90%}
+#head{position:absolute;width:250px;left:115px;top:-8px;transform-origin:50% 90%}
+#full{position:absolute;right:0;bottom:-20px;width:540px;display:none;transform-origin:70% 100%;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 70px)}
 #bar{position:absolute;top:0;left:0;height:9px;background:var(--gold)}
 </style></head><body>
 <canvas id="bg" width="1080" height="1920"></canvas><div id="bar"></div>
@@ -51,6 +52,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#24170e;font-fam
  </svg>
  <img id="head">
 </div>
+<img id="full">
 <script>
 const ease=x=>1-Math.pow(1-Math.min(1,Math.max(0,x)),3);
 let S,T,A,els=[];
@@ -60,6 +62,7 @@ function grain(){const c=document.getElementById('bg'),x=c.getContext('2d');
  for(let i=0;i<d.length;i+=4){const n=(r()-.5)*22;d[i]+=n;d[i+1]+=n;d[i+2]+=n;}x.putImageData(im,0,0);
  x.globalAlpha=.06;x.strokeStyle='#E2B566';for(let i=0;i<14;i++){x.beginPath();x.moveTo(0,140*i+40);x.bezierCurveTo(360,140*i+90,720,140*i-10,1080,140*i+50);x.stroke();}}
 window.init=(s,t,a,dir)=>{S=s;T=t;A=a;grain();document.getElementById('head').src='file://'+dir+'/head.png';
+ if(s.avatar==='photo'){document.getElementById('char').style.display='none';const f=document.getElementById('full');f.src='file://'+dir+'/full.png';f.style.display='block';}
  const st=document.getElementById('stage');S.scenes.forEach(sc=>{const d=document.createElement('div');d.className='sc';d.innerHTML=sc.html;st.appendChild(d);els.push(d);});
  window.ready=true;};
 function sceneAt(t){let i=0;for(let k=0;k<T.scenes.length;k++)if(t>=T.scenes[k].start)i=k;return i;}
@@ -74,10 +77,12 @@ window.renderAt=function(t){
    else if(fx==='stamp'){const q=Math.min(1,Math.max(0,(lt-d)/0.25));c.style.opacity=q;c.style.transform=`scale(${2.2-1.2*q}) rotate(${-6+rot}deg)`;}
    else if(fx==='pop'){const q=Math.min(1,Math.max(0,(lt-d)/0.3));c.style.opacity=q;c.style.transform=`scale(${q<1?0.5+0.62*Math.sin(q*Math.PI/2):1})`;}});});
  const sen=T.sentences.find(x=>t>=x.start&&t<x.end+0.25),sub=document.getElementById('sub');
- if(sen){const ws=sen.text.split(' '),p=(t-sen.start)/Math.max(.1,sen.end-sen.start);
-  sub.innerHTML=ws.map((w,k)=>{const key=(S.keywords||[]).includes(w.toLowerCase().replace(/[^a-z0-9]/g,''));return `<span class="${k/ws.length<=p?'on':''}${key?' k':''}">${w}</span>`}).join(' ');}else sub.innerHTML='';
+ if(sen){const all=sen.text.split(' '),N=all.length,p=(t-sen.start)/Math.max(.1,sen.end-sen.start),C=5,nc=Math.ceil(N/C),ci=Math.min(nc-1,Math.floor(p*N/C));
+  const ws=all.slice(ci*C,ci*C+C);
+  sub.innerHTML=ws.map((w,k)=>{const key=(S.keywords||[]).includes(w.toLowerCase().replace(/[^a-z0-9]/g,''));return `<span class="${(ci*C+k)/N<=p?'on':''}${key?' k':''}">${w}</span>`}).join(' ');}else sub.innerHTML='';
  const a=A.rms[Math.min(A.rms.length-1,Math.floor(t*A.fps))]||0;
  document.getElementById('head').style.transform=`translateY(${-a*10+Math.sin(t*2.2)*3}px) rotate(${Math.sin(t*1.4)*2.2+a*1.5}deg) scale(${1+a*0.025})`;
+ document.getElementById('full').style.transform=`translateY(${-a*6+Math.sin(t*2.0)*2}px) rotate(${Math.sin(t*1.2)*0.8}deg)`;
  document.getElementById('arm').setAttribute('transform',`rotate(${Math.sin(t*1.8)*4} 330 395)`);
  document.getElementById('bar').style.width=(t/T.duration*1080)+'px';};
 </script></body></html>
