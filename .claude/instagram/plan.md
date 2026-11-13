@@ -7,6 +7,7 @@ Status: TODO -> MADE -> POSTED (the scheduled run updates this column).
 | # | date | type | angle | hook (formula) | key law | status |
 |---|------|------|-------|----------------|---------|--------|
 | 1 | Mon 16 Nov 2026 | RIGHTS | Police arrive to arrest you: the 4 things they must tell/do | "Police can't arrest you and stay silent." (#2 Negative Command) | Art. 22(1)-(2); BNSS s.47 (grounds + right to bail), s.48 (inform relative), s.58 (magistrate in 24h) | POSTED 13 Nov https://www.instagram.com/reel/DfsNmnKiScG/ |
+| 1b | Mon 16 Nov 2026 7:30pm | JUDGMENT | UK divorce + doosri shaadi = bigamy (SC, 3 Nov 2026) — user's own voice, original uniform | "UK mein divorce liya. Doosri shaadi ki." | s.13 CPC; HMA; IPC 494 / BNS 82 | SCHEDULED Mon 16 Nov 7:30pm (reels/reel02v, auto-publish approved) |
 | 2 | Wed 18 Nov 2026 | MYTH | "Police said go to the other police station" — Zero FIR | "Wrong police station? They still have to write your FIR." | BNSS s.173(1) Zero FIR + e-FIR; Lalita Kumari v. Govt of UP (2013) | TODO |
 | 3 | Fri 20 Nov 2026 | WHAT-IF | Your cheque bounced: the 30-15-30 day clock | "30 days. 15 days. 30 days. Miss one and the case is gone." | NI Act s.138 provisos (b),(c); s.142(1)(b) | TODO |
 | 4 | Mon 23 Nov 2026 | MYTH | Nominee is not the owner | "Your nominee doesn't inherit your money." | Shakti Yezdani v. Jayanand Salgaonkar (SC, 2023) | TODO |
