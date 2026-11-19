@@ -14,7 +14,7 @@
 | 0-2s | The plane going down | **HI:** वो बस Vice City जा रहा था। · **EN:** He was just riding to Vice City. |
 | 2-6s | Him on the bike | **HI:** पहली बार। शर्ट उतारी, bike उठाई… · **EN:** First time. Shirt off, bike out… |
 | 6-12s | **His audio:** "Oh, plane crash. Oh, for real, plane crash." | — |
-| 12-18s | The wreck / smoke | **HI:** ना mission, ना cutscene: game ने बस ख़ुद ही plane गिरा दिया। · **EN:** No mission, no cutscene. The game just dropped a plane on its own. |
+| 12-18s | The wreck / smoke | **HI:** ना mission, ना cutscene: game ने बस ख़ुद ही plane गिरा दिया। (AI voice batch used the safe line instead: "और उसका reaction सब कुछ कह गया।") · **EN:** No mission, no cutscene. The game just dropped a plane on its own. |
 | 18-22s | **His audio:** "Vice City…" | **HI (after):** Leonida में welcome है। · **EN (after):** Welcome to Leonida. |
 
 Only use the 12-18s line if the footage confirms it was unscripted.

@@ -10,7 +10,7 @@
 | 0-2s | Jason under the bar, "225 lbs" | **HI:** GTA 6 में gym असली है: इतना असली कि आप fail हो सकते हो। · **EN:** The gym in GTA 6 is real. Real enough that you can fail. |
 | 2-8s | **His audio:** "Come on, you can do it… I'm ripped" | — |
 | 8-10s | Hard cut to "SET FAILED" + a record-scratch sound | — |
-| 10-16s | His face | **HI:** 225 pound, live stream पर, लाखों लोग देख रहे थे। · **EN:** 225 pounds, on a live stream, with millions watching. |
+| 10-16s | His face | **HI:** दो सौ पच्चीस pound, live stream पर, लाखों लोग देख रहे थे। · **EN:** 225 pounds, on a live stream, with millions watching. |
 | 16-24s | Squats, **his audio:** "Very good form, Jason… you can do it" | **HI:** लेकिन असली gym bro हार नहीं मानता। · **EN:** But a real gym bro doesn't quit. |
 | 24-30s | Last rep, **his audio:** "Last rep. What a giga chad." | **HI (after):** आपका Jason कितना उठाता है? · **EN (after):** How much does your Jason lift? |
 
