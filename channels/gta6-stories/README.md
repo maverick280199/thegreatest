@@ -1,7 +1,9 @@
 # GTA 6 Stories: channel blueprint
 
-A Shorts channel that takes real moments from big GTA 6 live streams and narrates each one as a
-story or a fact, so the clip is the evidence and the narration is the product. It runs in Hindi
+A Shorts channel that takes **gameplay-only** GTA 6 footage (no streamer on screen or on the audio)
+and narrates each clip as a story or a fact, so the clip is the evidence and the narration is the product.
+Footage comes from no-commentary playthroughs; see [`clips-shirrako-no-commentary.md`](clips-shirrako-no-commentary.md).
+(The earlier Live Insaan stream list is kept for reference but is superseded: it needed the streamer cropped and muted.) It runs in Hindi
 first, with English versions of whatever performs.
 
 GTA 6 launched on 19 November 2026 (PS5 and Xbox Series X|S). The window that matters is launch
@@ -24,13 +26,13 @@ English: *"One GTA 6 story or fact a day, from the moments you missed on stream.
 
 1. **0-2s, the hook line on screen and in the voiceover.** It must confirm the title and open a
    question. Never open with the channel name.
-2. **2-20s, the clip itself**, cut tight, with the streamer's real reaction audible. The reaction
-   is the reason to watch; the narration sits on top of the quiet parts, never over the payoff.
+2. **2-20s, the clip itself**, cut tight, with the **game's own audio** (police radio, NPC lines) audible
+   where it is the proof. The narration sits on top of the quiet parts, never over the payoff.
 3. **20-35s, the turn:** the fact, the twist or the "here is why it happened".
 4. **Last 2s, a loop line** that sends the viewer back to the start, or one question for the comments.
 
-Length 20-40s. Vertical 9:16, with the streamer's facecam on top and gameplay below. Captions burned in.
-Credit the source streamer on screen ("Clip: @LiveInsaan") and in the description, with a link.
+Length 20-40s. Vertical 9:16, gameplay only. Hindi captions burned in. Credit the footage source on
+screen ("Gameplay: Shirrako") and in the description, with a link.
 
 ## What travels in launch week
 

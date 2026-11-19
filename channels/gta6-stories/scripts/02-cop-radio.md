@@ -1,17 +1,19 @@
-# 02: The cop radio (Fact)
+# 02: The police describe you (Fact) · gameplay only
 
-- **Title (EN):** GTA 6 Cops Talk About You on the Radio
-- **Title (HI):** GTA 6 में Police आपके बारे में Radio पर बात करती है
-- **Thumbnail text:** "SUSPECT IS ARMED"
-- **Source:** Live Insaan, 2:27:09 – 2:28:00 and 2:28:38 – 2:31:33 · ~30s finished
+- **Title (EN):** GTA 6 Police Describe Exactly What You're Wearing
+- **Title (HI):** GTA 6 की Police को पता है आपने क्या पहना है
+- **Thumbnail text:** "BLACK JACKET. 20s." (the dispatch line, over the player on the dirt bike)
+- **Source:** Shirrako no-commentary walkthrough, 5:59:50 – 6:01:05 and 8:06:35 – 8:08:05 · ~38s finished
+- **Audio:** the game's own police radio stays in. The Hindi AI voiceover (already generated, lines 5, 7 and 8 of the batch) covers only the gaps.
 
-| Time | On screen | Voiceover |
+| Time | On screen | Audio |
 |---|---|---|
-| 0-2s | Phone screen: "Cop scanner installed" | **HI:** GTA 6 में police आपके बारे में live बात करती है, और आप सुन सकते हैं। · **EN:** In GTA 6 the police talk about you live, and you can listen. |
-| 2-7s | The scanner being installed | **HI:** एक app phone में डालो, और हर police frequency आपकी। · **EN:** One app on your phone, and every police frequency is yours. |
-| 7-20s | **Dispatch audio, no VO:** "615 on scene… suspect is confirmed armed… shots fired… air unit is on the way" | — |
-| 20-27s | The map with units closing in | **HI:** हर unit का number, हर arrival, हर update: game आपको बताता है कि police कहाँ से आ रही है। · **EN:** Every unit number, every arrival, every update. The game tells you where they're coming from. |
-| 27-30s | His reaction | **HI:** और इसका सबसे बड़ा फ़ायदा? Part 2 में। · **EN:** The best part of it? Part 2. |
+| 0-5s | Car theft in progress | **VO (line 5):** GTA 6 में police आपके बारे में live बात करती है, और आप सुन सकते हैं। |
+| 5-16s | Driving off in the red SUV | **Game radio:** "Possible Grand Theft Auto on Old Sport Road… suspect is driving a red SUV traveling southbound… an Albany Cavalcade." · Hindi caption: *लाल SUV, दक्षिण की ओर, model भी पता है* |
+| 16-29s | Escaping on foot / bike | **Game radio:** "Suspect is slender, in their 20s… wearing a black jacket… we have our suspect on CCTV." · Hindi caption: *उम्र, कद, कपड़े, CCTV पर भी* |
+| 29-36s | Dirt bike, cops losing the trail | **VO (line 7):** हर unit का number, हर arrival, हर update: game आपको बताता है कि police कहाँ से आ रही है। |
+| 36-39s | **Game radio:** "Trail is turning cold." | **VO (line 8):** और इसका सबसे बड़ा फ़ायदा? Part 2 में। |
 
-**Spoiler guard:** cut the mission context (whose car it is, why he's at the impound). Open on the scanner, not the gunfire, so the
-first 7 seconds stay monetisable. A Part 2 can show the "heat" map and the disguise mechanic (2:45:01 – 2:47:24).
+**Spoiler guard:** both stretches are free-roam police responses. Check the footage around 8:04 (an "explosion near Bucks" report) and cut
+anything that shows a mission objective or cutscene. Don't name the playable character in captions; "the suspect" is enough.
+**Part 2** can show the cop scanner app (story-gated, so describe it only as "a phone app") and the heat map.
