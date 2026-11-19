@@ -4,6 +4,10 @@ Full track (all nine Shorts, 2:50): https://assets.vidiq.com/voiceovers/11db7cd3
 
 One file per line, so each line can be placed on its beat in the script table.
 
+**Always use the per-line files below, never cuts from the full track.** vidIQ's `extract_audio` with a start time
+returns a file padded to the original end time with the requested range at the *start*, so cutting it at batch
+timestamps picks the wrong lines. That is what put another Short's narration under the first render of Short 02.
+
 
 ## Short 01
 
