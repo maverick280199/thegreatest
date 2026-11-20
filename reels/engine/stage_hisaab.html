@@ -1,0 +1,124 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:PF;src:url(fonts/playfair-display-latin-800-italic.woff2);font-style:italic;font-weight:800}
+@font-face{font-family:PF;src:url(fonts/playfair-display-latin-700-normal.woff2);font-style:normal;font-weight:700}
+@font-face{font-family:PP;src:url(fonts/poppins-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:PP;src:url(fonts/poppins-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:PP;src:url(fonts/poppins-latin-800-normal.woff2);font-weight:800}
+:root{--bg:#12403A;--bg2:#0C2E29;--paper:#F5EEDC;--ink:#1D2A26;--gold:#E6B450;--red:#C8402F;--mint:#7FD3B4;--cream:#FFF8E8}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:PP,sans-serif;color:var(--cream)}
+#bg{position:absolute;inset:0}
+#badge{position:absolute;top:96px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--ink);font:800 30px PP;letter-spacing:.12em;padding:12px 30px;border-radius:12px;white-space:nowrap}
+#badge span{opacity:.6;margin-left:12px}
+#brand{position:absolute;top:172px;width:100%;text-align:center;font:700 22px PP;letter-spacing:.3em;color:var(--mint);opacity:.75}
+#stage{position:absolute;top:230px;left:60px;right:60px;height:930px}
+.sc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;gap:22px}
+.big{font:800 150px/1 PP;color:var(--gold);letter-spacing:-.02em}
+.big.md{font-size:112px}
+.t{font:800 62px/1.15 PP;color:var(--cream)}
+.t em{font:800 70px PF;font-style:italic;color:var(--gold)}
+.lab{font:700 28px PP;letter-spacing:.2em;color:var(--mint);text-transform:uppercase}
+.card{background:var(--paper);color:var(--ink);border-radius:22px;padding:28px 40px;box-shadow:0 16px 0 rgba(0,0,0,.18);min-width:700px;text-align:left;position:relative}
+.card .l{font:700 26px PP;letter-spacing:.16em;color:#6B7F77;text-transform:uppercase}
+.card .v{font:800 64px/1.15 PP;color:var(--ink);margin-top:4px}
+.card .v b{color:var(--red)} .card .v i{font-style:normal;color:#2E7D5B}
+.row{display:flex;justify-content:space-between;align-items:baseline;font:700 48px PP;padding:10px 0;border-bottom:3px dashed rgba(29,42,38,.18)}
+.row:last-child{border-bottom:0}.row .k{color:#4E5F59}.row .n{color:var(--ink);font-weight:800}
+.row.tot .k{color:var(--ink)}.row.tot .n{color:var(--red)}
+.cal{display:flex;gap:26px;justify-content:center}
+.day{width:270px;background:var(--paper);border-radius:22px;overflow:hidden;color:var(--ink);box-shadow:0 14px 0 rgba(0,0,0,.18)}
+.day .h{background:var(--red);color:#fff;font:800 26px PP;padding:10px;letter-spacing:.1em}
+.day .d{font:800 120px/1.1 PP;padding:8px 0 0}
+.day .s{font:700 28px PP;color:#4E5F59;padding:0 10px 18px}
+.stamp{display:inline-block;padding:16px 38px;border:8px solid var(--red);color:var(--red);font:800 70px PP;letter-spacing:.06em;border-radius:16px;background:rgba(245,238,220,.92)}
+.pill{display:inline-block;padding:14px 34px;border-radius:50px;font:800 36px PP;background:var(--gold);color:var(--ink)}
+.pill.o{background:transparent;border:4px solid var(--gold);color:var(--gold)}
+.cheque{width:780px;height:330px;background:linear-gradient(135deg,#FDF6E3,#EAD9B0);border-radius:18px;color:var(--ink);position:relative;text-align:left;padding:30px 40px;box-shadow:0 16px 0 rgba(0,0,0,.2)}
+.cheque .bk{font:800 28px PP;letter-spacing:.1em;color:#7A6A40}
+.cheque .amt{position:absolute;right:40px;top:110px;border:4px solid var(--ink);border-radius:10px;padding:8px 22px;font:800 56px PP}
+.cheque .pay{position:absolute;left:40px;top:130px;font:500 30px PP;color:#5A5040}
+.cheque .line{position:absolute;left:40px;right:330px;top:200px;border-bottom:3px solid #8A7A50}
+.cheque .sig{position:absolute;right:40px;bottom:30px;font:italic 800 40px PF;color:#3A3A6A}
+.cheque .st{position:absolute;left:70px;top:200px}
+#sub{position:absolute;top:1180px;left:520px;right:50px;text-align:left;font:800 50px/1.25 PP;color:#fff;text-shadow:0 3px 10px rgba(0,0,0,.5)}
+#sub span{opacity:.32}#sub span.on{opacity:1}#sub span.k{color:var(--gold)}
+#mascot{position:absolute;left:10px;bottom:-20px;width:520px;height:760px}
+#bar{position:absolute;top:0;left:0;height:10px;background:var(--gold)}
+</style></head><body>
+<canvas id="bg" width="1080" height="1920"></canvas><div id="bar"></div>
+<div id="badge">KANOON KA HISAAB<span id="ep">EP 1</span></div>
+<div id="brand">PUNDIR &amp; ASSOCIATES</div>
+<div id="stage"></div><div id="sub"></div>
+<svg id="mascot" viewBox="0 0 520 760">
+ <g id="body">
+  <ellipse cx="250" cy="745" rx="170" ry="16" fill="rgba(0,0,0,.25)"/>
+  <!-- legs -->
+  <rect x="180" y="560" width="60" height="180" rx="22" fill="#4A4F57"/><rect x="262" y="560" width="60" height="180" rx="22" fill="#4A4F57"/>
+  <ellipse cx="205" cy="740" rx="48" ry="18" fill="#151515"/><ellipse cx="300" cy="740" rx="48" ry="18" fill="#151515"/>
+  <!-- left arm (static, on hip) -->
+  <path d="M150 400 C105 450 110 520 160 540" stroke="#121212" stroke-width="54" stroke-linecap="round" fill="none"/>
+  <circle cx="165" cy="540" r="24" fill="#E0A982"/>
+  <!-- coat -->
+  <path d="M140 380 C140 330 190 300 251 300 C312 300 362 330 362 380 L372 600 C320 620 180 620 130 600 Z" fill="#121212"/>
+  <path d="M220 304 L251 390 L282 304 Z" fill="#FFFFFF"/>
+  <path d="M220 304 L251 390 L232 470 L190 330 Z M282 304 L251 390 L270 470 L312 330 Z" fill="#232323"/>
+  <rect x="236" y="352" width="13" height="56" rx="3" fill="#fff"/><rect x="253" y="352" width="13" height="56" rx="3" fill="#fff"/>
+  <circle cx="251" cy="500" r="7" fill="#3A3A3A"/><circle cx="251" cy="540" r="7" fill="#3A3A3A"/>
+  <!-- right arm (animated) -->
+  <g id="armR"><path d="M352 390 C405 360 425 300 430 250" stroke="#121212" stroke-width="54" stroke-linecap="round" fill="none"/>
+   <circle cx="432" cy="236" r="26" fill="#E0A982"/><path d="M436 214 L444 168" stroke="#E0A982" stroke-width="20" stroke-linecap="round"/></g>
+  <!-- neck + head -->
+  <rect x="226" y="262" width="50" height="48" rx="16" fill="#C98E68"/>
+  <g id="head">
+   <ellipse cx="160" cy="180" rx="18" ry="28" fill="#D9A07A"/><ellipse cx="342" cy="180" rx="18" ry="28" fill="#D9A07A"/>
+   <path d="M160 160 C160 80 205 50 251 50 C297 50 342 80 342 160 L342 205 C342 260 300 290 251 290 C202 290 160 260 160 205 Z" fill="#E6AE88"/>
+   <!-- beard -->
+   <path d="M164 200 C170 270 210 300 251 300 C292 300 332 270 338 200 C326 238 300 252 251 252 C202 252 176 238 164 200 Z" fill="#1E1A18"/>
+   <!-- hair -->
+   <path d="M152 168 C140 90 190 30 262 34 C330 38 362 92 350 168 C344 140 336 122 322 112 C300 124 262 118 236 100 C220 112 196 118 176 116 C164 128 158 146 152 168 Z" fill="#1E1A18"/><path d="M236 100 C250 70 290 62 318 80" stroke="#3A3330" stroke-width="6" fill="none" stroke-linecap="round"/>
+   <!-- glasses -->
+   <g fill="rgba(255,255,255,.18)" stroke="#C9CED6" stroke-width="5"><rect x="182" y="150" width="62" height="44" rx="14"/><rect x="258" y="150" width="62" height="44" rx="14"/></g>
+   <path d="M244 168 H258" stroke="#C9CED6" stroke-width="5"/>
+   <ellipse cx="213" cy="172" rx="17" ry="15" fill="#fff"/><ellipse cx="289" cy="172" rx="17" ry="15" fill="#fff"/><g id="eyes" fill="#1E1A18"><circle cx="215" cy="173" r="9"/><circle cx="291" cy="173" r="9"/><circle cx="218" cy="169" r="3" fill="#fff"/><circle cx="294" cy="169" r="3" fill="#fff"/></g>
+   <g id="brows" stroke="#1E1A18" stroke-width="9" stroke-linecap="round"><path d="M190 136 Q213 118 238 130"/><path d="M264 130 Q289 118 312 136"/></g>
+   <path d="M251 182 Q244 210 256 214" stroke="#B97E5A" stroke-width="5" fill="none" stroke-linecap="round"/>
+   <!-- moustache + mouth -->
+   <path d="M214 236 Q251 220 288 236 Q251 230 214 236 Z" fill="#1E1A18" stroke="#1E1A18" stroke-width="8" stroke-linejoin="round"/>
+   <path d="M222 246 Q251 268 280 246" stroke="#7A2420" stroke-width="6" fill="none" stroke-linecap="round"/><ellipse id="mouth" cx="251" cy="252" rx="18" ry="3" fill="#7A2420"/>
+  </g>
+ </g>
+</svg>
+<script>
+const ease=x=>1-Math.pow(1-Math.min(1,Math.max(0,x)),3);
+const inr=n=>Math.round(n).toLocaleString('en-IN');
+let S,T,A,els=[];
+function bg(){const c=document.getElementById('bg'),x=c.getContext('2d');
+ const g=x.createLinearGradient(0,0,0,1920);g.addColorStop(0,'#155046');g.addColorStop(1,'#0B2C27');x.fillStyle=g;x.fillRect(0,0,1080,1920);
+ x.strokeStyle='rgba(127,211,180,.07)';x.lineWidth=2;for(let y=260;y<1920;y+=64){x.beginPath();x.moveTo(0,y);x.lineTo(1080,y);x.stroke();}
+ x.strokeStyle='rgba(200,64,47,.18)';x.beginPath();x.moveTo(110,0);x.lineTo(110,1920);x.stroke();}
+window.init=(s,t,a,dir)=>{S=s;T=t;A=a;bg();if(S.ep)document.getElementById('ep').textContent=S.ep;
+ const st=document.getElementById('stage');S.scenes.forEach(sc=>{const d=document.createElement('div');d.className='sc';d.innerHTML=sc.html;st.appendChild(d);els.push(d);});window.ready=true;};
+function sceneAt(t){let i=0;for(let k=0;k<T.scenes.length;k++)if(t>=T.scenes[k].start)i=k;return i;}
+function delay(c,sc){return c.dataset.s!==undefined?T.sentences[+c.dataset.s].start-sc.start+(+c.dataset.d||0):(+c.dataset.in||0);}
+window.renderAt=function(t){
+ const i=sceneAt(t),sc=T.scenes[i],lt=t-sc.start;
+ els.forEach((e,k)=>{if(k!==i){e.style.opacity=0;return;}e.style.opacity=ease(lt/0.25);
+  e.querySelectorAll('[data-in],[data-s]').forEach(c=>{const d=delay(c,sc),fx=c.dataset.fx||'up',r=+c.dataset.r||0;
+   if(fx==='stamp'){const q=Math.min(1,Math.max(0,(lt-d)/0.22));c.style.opacity=q;c.style.transform=`scale(${2.4-1.4*q}) rotate(${r||-8}deg)`;return;}
+   if(fx==='pop'){const q=Math.min(1,Math.max(0,(lt-d)/0.3));c.style.opacity=q;c.style.transform=`scale(${q<1?0.4+0.75*Math.sin(q*Math.PI/2):1}) rotate(${r}deg)`;return;}
+   const p=ease((lt-d)/0.4);c.style.opacity=p;
+   c.style.transform=fx==='left'?`translateX(${(1-p)*-300}px) rotate(${r}deg)`:fx==='right'?`translateX(${(1-p)*300}px) rotate(${r}deg)`:`translateY(${(1-p)*70}px) rotate(${r}deg)`;});
+  e.querySelectorAll('[data-count]').forEach(c=>{const d=delay(c,sc),p=ease((lt-d-0.1)/1.1);c.textContent=(c.dataset.pre||'')+inr(p*+c.dataset.count)+(c.dataset.post||'');});});
+ const sen=T.sentences.find(x=>t>=x.start&&t<x.end+0.25),sub=document.getElementById('sub');
+ if(sen){const all=sen.text.split(' '),N=all.length,p=(t-sen.start)/Math.max(.1,sen.end-sen.start),C=4,ci=Math.min(Math.ceil(N/C)-1,Math.floor(p*N/C));
+  sub.innerHTML=all.slice(ci*C,ci*C+C).map((w,k)=>{const key=(S.keywords||[]).includes(w.toLowerCase().replace(/[^a-z0-9₹]/g,''))||/₹|\d/.test(w);return `<span class="${(ci*C+k)/N<=p?'on':''}${key?' k':''}">${w}</span>`}).join(' ');}else sub.innerHTML='';
+ const a=A.rms[Math.min(A.rms.length-1,Math.floor(t*A.fps))]||0, twist=(S.twistScene===i);
+ document.getElementById('mouth').setAttribute('ry',3+a*16);document.getElementById('mouth').setAttribute('rx',18-a*3);
+ document.getElementById('eyes').style.transform=(t%3.3)<0.12?'translateY(172px) scaleY(.1) translateY(-172px)':'';
+ document.getElementById('brows').style.transform=`translateY(${twist?-10:-a*4}px)`;
+ document.getElementById('head').setAttribute('transform',`rotate(${Math.sin(t*1.6)*3+a*2} 251 280)`);
+ document.getElementById('armR').setAttribute('transform',`rotate(${Math.sin(t*2.1)*7-(twist?14:0)} 352 390)`);
+ document.getElementById('body').setAttribute('transform',`translate(0 ${-Math.abs(Math.sin(t*2.4))*6-a*6})`);
+ document.getElementById('bar').style.width=(t/T.duration*1080)+'px';};
+</script></body></html>

@@ -1,0 +1,129 @@
+{
+ "duration": 96.92,
+ "sentences": [
+  {
+   "text": "\u20b91 lakh ka cheque bounce hua? Paisa doobega nahi. Kanoon ke hisaab se \u20b92 lakh tak mil sakte hain.",
+   "scene": 0,
+   "start": 0.3,
+   "end": 7.76
+  },
+  {
+   "text": "Kaise? Hisaab samjhiye. Kanoon Ka Hisaab \u2014 episode ek.",
+   "scene": 0,
+   "start": 8.16,
+   "end": 12.32
+  },
+  {
+   "text": "Pehle ghadi. Bank se cheque wapas aaya, return memo mila.",
+   "scene": 1,
+   "start": 12.72,
+   "end": 17.1
+  },
+  {
+   "text": "30 din ke andar legal notice bhejo.",
+   "scene": 1,
+   "start": 17.5,
+   "end": 20.19
+  },
+  {
+   "text": "Saamne wale ke paas paisa lautane ke 15 din.",
+   "scene": 1,
+   "start": 20.59,
+   "end": 23.98
+  },
+  {
+   "text": "Nahi lautaya? Agle ek mahine mein complaint file karo. Section 138, NI Act.",
+   "scene": 1,
+   "start": 24.38,
+   "end": 30.15
+  },
+  {
+   "text": "Yaad rakho: 30, 15, 30. Deadline chooki, toh case kamzor.",
+   "scene": 1,
+   "start": 30.55,
+   "end": 34.93
+  },
+  {
+   "text": "Ab paisa. Case chalte-chalte hi court 20 percent tak interim compensation dila sakta hai. Yaani \u20b920,000 tak. Section 143A.",
+   "scene": 2,
+   "start": 35.33,
+   "end": 44.72
+  },
+  {
+   "text": "Conviction hua? Fine, cheque ka do guna tak. \u20b91 lakh par \u20b92 lakh tak. Aur court ye rakam aapko compensation mein dila sakta hai.",
+   "scene": 3,
+   "start": 45.12,
+   "end": 54.96
+  },
+  {
+   "text": "Saath mein do saal tak ki jail bhi ho sakti hai.",
+   "scene": 3,
+   "start": 55.36,
+   "end": 59.05
+  },
+  {
+   "text": "Accused appeal mein gaya? Pehle fine ya compensation ka kam se kam 20 percent jama karna padega. Section 148.",
+   "scene": 4,
+   "start": 59.45,
+   "end": 67.84
+  },
+  {
+   "text": "Ab twist. Agar accused case jeet gaya, toh wo interim 20 percent aapko byaaj ke saath lautana padega.",
+   "scene": 5,
+   "start": 68.24,
+   "end": 76.01
+  },
+  {
+   "text": "Isliye case tabhi karo, jab saboot pakka ho ki paisa sach mein bakaaya tha.",
+   "scene": 5,
+   "start": 76.41,
+   "end": 82.18
+  },
+  {
+   "text": "Kanoon ka hisaab saaf hai: deadline pakdo, saboot rakho.",
+   "scene": 6,
+   "start": 82.58,
+   "end": 86.88
+  },
+  {
+   "text": "Kisi ka cheque aapke paas pada hai? Us dost ko ye reel bhejo. Agla hisaab: property mein kisko kitna hissa.",
+   "scene": 7,
+   "start": 87.28,
+   "end": 95.52
+  }
+ ],
+ "scenes": [
+  {
+   "i": 0,
+   "start": 0
+  },
+  {
+   "i": 1,
+   "start": 12.600000000000001
+  },
+  {
+   "i": 2,
+   "start": 35.21
+  },
+  {
+   "i": 3,
+   "start": 45.0
+  },
+  {
+   "i": 4,
+   "start": 59.330000000000005
+  },
+  {
+   "i": 5,
+   "start": 68.11999999999999
+  },
+  {
+   "i": 6,
+   "start": 82.46
+  },
+  {
+   "i": 7,
+   "start": 87.16
+  }
+ ]
+}
