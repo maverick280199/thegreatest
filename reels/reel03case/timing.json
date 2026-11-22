@@ -1,0 +1,89 @@
+{
+ "duration": 80.52,
+ "sentences": [
+  {
+   "text": "Registry ho gayi, stamp lag gaya, kaagaz haath mein aa gaye \u2014 aur aapko lagta hai ki ab zameen aapki hai.",
+   "scene": 0,
+   "start": 0.3,
+   "end": 8.38
+  },
+  {
+   "text": "Lekin main aapko bata doon, Supreme Court ne saaf keh diya hai: sirf registry se aap maalik nahi bante.",
+   "scene": 0,
+   "start": 8.78,
+   "end": 16.7
+  },
+  {
+   "text": "Ek case suniye. May 2025 mein Supreme Court ke saamne Telangana ki lagbhag 53 acre zameen ka maamla aaya.",
+   "scene": 1,
+   "start": 17.1,
+   "end": 25.18
+  },
+  {
+   "text": "Kharidaron ke paas registered sale deeds thi, sab kuch sarkari daftar mein darj tha. Unhe laga, kaam ho gaya.",
+   "scene": 2,
+   "start": 25.58,
+   "end": 33.96
+  },
+  {
+   "text": "Par jab court ne zameen ki kahani peeche tak khodi, toh pata chala ki bechne wale ka apna haq ek 1982 ke agreement par tika tha \u2014 aur wo agreement kabhi register hi nahi hua tha.",
+   "scene": 3,
+   "start": 34.36,
+   "end": 48.05
+  },
+  {
+   "text": "Yaani jis buniyaad par poori imaarat khadi thi, wo buniyaad hi kachchi thi.",
+   "scene": 4,
+   "start": 48.45,
+   "end": 54.22
+  },
+  {
+   "text": "Supreme Court ne kaha: registration ek procedure hai. Wo sirf ek transaction ko record karta hai.",
+   "scene": 5,
+   "start": 54.62,
+   "end": 62.08
+  },
+  {
+   "text": "Agar bechne wale ke paas khud haq hi nahi tha, toh registry us kami ko theek nahi kar sakti.",
+   "scene": 5,
+   "start": 62.48,
+   "end": 69.56
+  },
+  {
+   "text": "Malikana haq hamesha usi se aata hai jo khud asli maalik ho. Aap kisi ko wo cheez nahi bech sakte jo aapki hai hi nahi.",
+   "scene": 6,
+   "start": 69.96,
+   "end": 79.12
+  }
+ ],
+ "scenes": [
+  {
+   "i": 0,
+   "start": 0
+  },
+  {
+   "i": 1,
+   "start": 16.98
+  },
+  {
+   "i": 2,
+   "start": 25.459999999999997
+  },
+  {
+   "i": 3,
+   "start": 34.24
+  },
+  {
+   "i": 4,
+   "start": 48.330000000000005
+  },
+  {
+   "i": 5,
+   "start": 54.5
+  },
+  {
+   "i": 6,
+   "start": 69.83999999999999
+  }
+ ]
+}
