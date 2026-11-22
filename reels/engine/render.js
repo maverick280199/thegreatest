@@ -15,7 +15,7 @@ const fs = require('fs'); const path = require('path');
   await page.waitForTimeout(300);
   await page.waitForFunction('window.ready === true');
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-',
-    '-i', path.join(dir, 'voice.mp3'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-crf', '18',
+    '-i', fs.existsSync(path.join(dir, 'mix.mp3')) ? path.join(dir, 'mix.mp3') : path.join(dir, 'voice.mp3'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-crf', '18',
     '-af', 'apad', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', path.join(dir, 'reel.mp4')], { stdio: ['pipe', 'inherit', 'inherit'] });
   for (let i = 0; i < n; i++) {
     await page.evaluate(t => window.renderAt(t), i / fps);
